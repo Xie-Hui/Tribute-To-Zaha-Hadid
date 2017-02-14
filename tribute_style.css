@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+.img-responsive{
+  padding: 10px;
+}
+.image {
+  position: relative;
+  width: 100%;
+}
+h1 {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  width: 100%;
+  font-family: 'Poiret One', cursive;
+}
+h1 span{
+  color: white;
+  font: 100% Helvetica San-Serif;
+  font-family: 'Poiret One', cursive;
+  letter-spacing: 0px; 
+  padding: 0px;
+}
+h2{
+  font-family: 'Poiret One', cursive;
+}
+h3{
+  font-family: 'Poiret One', cursive;
+}
+blockquote p{
+  color: gray;
+  font-style: italic;
+}
+p{
+  font-family: 'Ubuntu', sans-serif;
+  font-style: light;
+}
+.row.extra-bottom-padding{
+  margin-bottom:30px;
+}
+img.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+img.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: all .5s cubic-bezier(0.42, 0.0, 0.58, 1.0);
+}
